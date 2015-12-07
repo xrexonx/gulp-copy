@@ -30,10 +30,16 @@ gulp.task('copy', function () {
   	//single files ~ string
   	var files = './bower_components/angular/angular.min.js'
 
-
+    
     copy(files,'yourDestination/folder');
 });
 
+```
+
+## Run Task
+
+```
+$ gulp copy
 ```
 
 ## License
