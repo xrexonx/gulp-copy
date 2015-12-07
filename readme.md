@@ -1,5 +1,9 @@
 # gulp-copy
 
+[![Build Status](https://travis-ci.org/xrexonx/gulp-copy.svg?branch=master)](https://travis-ci.org/xrexonx/gulp-copy)
+[![npm version](https://badge.fury.io/js/gulp-copy.svg)](https://badge.fury.io/js/gulp-copy)
+[![Downloads](http://img.shields.io/npm/dm/gulp-copy-rex.svg)](https://www.npmjs.com/package/gulp-copy-rex)
+
 
 Enables you to copy or transfer files on your gulp task (gulpfile.js).
 ## Install
@@ -7,6 +11,7 @@ Enables you to copy or transfer files on your gulp task (gulpfile.js).
 ```
 $ npm install --save-dev gulp-copy-rex
 ```
+[![NPM](https://nodei.co/npm/gulp-copy-rex.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/gulp-copy-rex/)
 
 ## Usage
 
