@@ -1,8 +1,7 @@
 # gulp-copy
 
 
-Enables you to copy files blah blah
-
+Enables you to copy or transfer files on your gulp task (gulpfile.js).
 ## Install
 
 ```
