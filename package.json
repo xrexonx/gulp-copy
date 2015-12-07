@@ -1,5 +1,5 @@
 {
-  "name": "gulp-copy",
+  "name": "gulp-copy-rex",
   "version": "1.0.0",
   "description": "Inspired by laravel-elixir's copy() method. ~12062015",
   "main": "index.js",
