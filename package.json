@@ -1,0 +1,32 @@
+{
+  "name": "gulp-copy",
+  "version": "1.0.0",
+  "description": "Inspired by laravel-elixir's copy() method. ~12062015",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "gulp-copy",
+    "copy",
+    "move",
+    "javascript",
+    "helper",
+    "method",
+    "xrexonx"
+  ],
+  "author": {
+    "name": "Rexon A. De los Reyes",
+    "email": "rexondelosreyes88@gmail.com",
+    "url": "https://xrexonx.github.io"
+  },
+  "license": "MIT",
+  "repository": "xrexonx/gulp-copy",
+  "dependencies": {
+    "gulp-util": "^3.0.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
