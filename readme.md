@@ -50,4 +50,4 @@ $ gulp copy
 
 MIT © [Rexon A. De los Reyes](http://xrexonx.github.io)
 
-## Thanks and Enjoy. Goodspeed. ~ xrexonx
+#### Thanks and Enjoy. Goodspeed. ~ xrexonx
