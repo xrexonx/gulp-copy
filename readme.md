@@ -49,3 +49,5 @@ $ gulp copy
 ## License
 
 MIT © [Rexon A. De los Reyes](http://xrexonx.github.io)
+
+## Thanks and Enjoy. Goodspeed. ~ xrexonx
