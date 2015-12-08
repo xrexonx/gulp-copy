@@ -22,7 +22,7 @@ var copy = require('gulp-copy-rex');
 
 gulp.task('copy', function () {
 
-	//array of files ~ object
+	//array of files ~ array / object
     var files = [
   			'./node_modules/someVendors/vendors.js',
   			'./bower_components/someVendors2/vendors2.js',
@@ -31,7 +31,7 @@ gulp.task('copy', function () {
 
   	or
 
-  	//single files ~ string
+  	//single file ~ string
   	var files = './bower_components/angular/angular.min.js'
 
     
