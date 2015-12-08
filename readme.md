@@ -32,7 +32,7 @@ gulp.task('copy', function () {
   	or
 
   	//single file ~ string
-  	var files = './bower_components/angular/angular.min.js'
+  	var files = './bower_components/angular/angular.min.js';
 
     
     copy(files,'yourDestination/folder');
