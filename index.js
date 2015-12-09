@@ -15,9 +15,9 @@ function _safeCheck(filesToCopy) {
     return filesToCopy;
 }
 
-function _setFilename(opts) {
-    if (opts.filename) {
-        var filename = opts.filename.indexOf('.min.js') >= 0 ? opts.filename : opts.filename + '.min.js';
+function _setFilename(filename) {
+    if (filename) {
+         filename = filename.indexOf('.min.js') >= 0 ? filename : filename + '.min.js';
     }
     return filename || 'app.min.js';
 }
@@ -25,14 +25,14 @@ function _setFilename(opts) {
 module.exports = function (filesToCopy, destination, opts) {
 
      filesToCopy = _safeCheck(filesToCopy);
-     opts = opts || {min: false};
+     opts = opts || {min: false, concat: false};
 
-    //if minify is true
-     var filename = opts.min ? _setFilename(opts) : '';
+    //set filename if concat is set to true
+     var filename = opts.concat ? _setFilename(opts.filename) : '';
 
     return gulp
         .src(filesToCopy)
-        .pipe(opts.min ? concat(filename) : gutil.noop())
+        .pipe(opts.concat ? concat(filename) : gutil.noop())
         .pipe(opts.min ? uglify() : gutil.noop())
         .pipe(gulp.dest(destination));
 };
