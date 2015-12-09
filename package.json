@@ -1,6 +1,6 @@
 {
   "name": "gulp-copy-rex",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Inspired by laravel-elixir's copy() method. ~12062015",
   "main": "index.js",
   "keywords": [
@@ -20,10 +20,12 @@
   },
   "license": "MIT",
   "repository": "xrexonx/gulp-copy",
+  "dependencies": {
+    "gulp-util": "^3.0.7"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
-    "gulp-uglify": "^1.5.1",
-    "gulp-util": "^3.0.7"
+    "gulp-uglify": "^1.5.1"
   }
 }
