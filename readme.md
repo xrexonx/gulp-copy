@@ -40,6 +40,21 @@ gulp.task('copy', function () {
 
 ```
 
+Using options as 3rd params
+```js
+
+    var opts = {
+    	min:true, //minify ~ default false
+    	concat:true, //concat ~ default false
+    	filename:'app' //set filename if concat is set to true
+    }
+
+    copy(files, dist, opts);
+});
+
+```
+
+
 ## Run Task
 
 ```
