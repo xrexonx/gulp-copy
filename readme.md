@@ -40,9 +40,8 @@ gulp.task('copy', function () {
 
 ```
 
-Using options as 3rd params
+Using options as 3rd param ~ Minify and Concat Files using gulp-uglify and gulp-concat (not applicable to CSS files)
 ```js
-
     var opts = {
     	min:true, //minify ~ default false
     	concat:true, //concat ~ default false
@@ -53,7 +52,6 @@ Using options as 3rd params
 });
 
 ```
-
 
 ## Run Task
 
