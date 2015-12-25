@@ -21,11 +21,11 @@
   "license": "MIT",
   "repository": "xrexonx/gulp-copy",
   "dependencies": {
-    "gulp-util": "^3.0.7"
-  },
-  "devDependencies": {
-    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.7",
     "gulp-concat": "^2.6.0",
     "gulp-uglify": "^1.5.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
   }
 }
