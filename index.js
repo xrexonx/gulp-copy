@@ -1,9 +1,10 @@
 'use strict';
 
-var gulp = require('gulp');
-var gutil = require('gulp-util');
+var gulp   = require('gulp');
+var gutil  = require('gulp-util');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var rename = require("gulp-rename");
 
 function _safeCheck(filesToCopy) {
 
@@ -17,22 +18,23 @@ function _safeCheck(filesToCopy) {
 
 function _setFilename(filename) {
     if (filename) {
-         filename = filename.indexOf('.min.js') >= 0 ? filename : filename + '.min.js';
+        filename = filename.indexOf('.min.js') >= 0 ? filename : filename + '.min.js';
     }
     return filename || 'app.min.js';
 }
 
 module.exports = function (filesToCopy, destination, opts) {
 
-     filesToCopy = _safeCheck(filesToCopy);
-     opts = opts || {min: false, concat: false};
+    filesToCopy = _safeCheck(filesToCopy);
+    opts = opts || {min: false, concat: false};
 
-    //set filename if concat is set to true
-     var filename = opts.concat ? _setFilename(opts.filename) : '';
+    var filename =  _setFilename(opts.filename);
 
     return gulp
         .src(filesToCopy)
         .pipe(opts.concat ? concat(filename) : gutil.noop())
         .pipe(opts.min ? uglify() : gutil.noop())
+        .pipe(opts.filename && !opts.concat ? rename(filename) : gutil.noop())
         .pipe(gulp.dest(destination));
 };
+
