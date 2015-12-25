@@ -45,7 +45,7 @@ Using options as 3rd param ~ Minify and Concat files using [gulp-uglify](https:/
     var opts = {
     	min:true, //minify ~ default false
     	concat:true, //concat ~ default false
-    	filename:'app' //set filename if concat is set to true
+    	filename:'app' //set filename
     }
 
     copy(files, dist, opts);
